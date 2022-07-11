@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("../images/sunset_mountain_4.png");
+}
+
+
+
+::selection {
+    color: orange;
+    background-color: white;
+}
+
+
+
+
+/* navigation bar */
+header  .logo {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+.navigationLinks{
+    border-radius: 20px;
+    color: white;
+    font-weight: 300;
+}
+
+.navigationLinks:hover {
+    background-color: white;
+    color: orange;
+}
+
+
+
+
+
+/* homepage */
+
+.introduction {
+    margin-top: 320px;
+}
+
+.moon {  
+    animation-name: floatingMoon;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left:30px;
+    margin-top: 5px;
+}
+
+@keyframes floatingMoon {
+    from { transform: translate(0,  -120px); }
+    65%  { transform: translate(0, -90px); }
+    to   { transform: translate(0, -120px); }    
+}
