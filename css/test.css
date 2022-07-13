@@ -65,13 +65,6 @@ body {
     z-index: -1;
 }
 
-.background {
-    transform: translateZ(-10px) scale(2);
-}
-
-.foreground {
-    transform: translateZ(-5px) scale(1.5);
-}
 
 .background, .foreground {
     position: absolute;
@@ -79,5 +72,15 @@ body {
     width: 100%;
     object-fit: cover;
     z-index: -1;
+}
+
+.background {
+    transform: translateZ(-10px) scale(2);
+    right: 10px;
+}
+
+.foreground {
+    transform: translateZ(-5px) scale(1.5);
+    right: 6px;
 }
 
