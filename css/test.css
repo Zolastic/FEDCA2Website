@@ -8,17 +8,26 @@ body {
 }
 
 ::selection {
-    color: orange;
-    background-color: white;
+    color: #B5A280;
+    background-color: rgba(255, 255, 255, 0.25);
 }
+
+
+
 
 /* navigation bar */
 .logo {
-    color: white;
+    color: #B5A280;
+    /* color: #A68444; */
     font-weight: 700;
     text-decoration: none;
     font-size: 2em;
     letter-spacing: 2px;
+}
+
+.logo:hover {
+    /* color: #F2C97C; */
+    color: #A68444;
 }
 
 .navigationLinks{
@@ -29,10 +38,12 @@ body {
 
 .navigationLinks:hover {
     background-color: white;
-    color: orange;
+    color: #A68444;
 }
 
-
+.careerOptionsDropdown:hover {
+    color: #A68444;
+}
 
 
 
@@ -47,8 +58,8 @@ body {
     text-shadow: 0 0 5px black;
 }
 
-.aboutMeContent {
-    padding: 2rem;
+.exploreMeButton {
+    color: #9E7D3A;
 }
 
 .wrapper {
@@ -84,3 +95,6 @@ body {
     right: 6px;
 }
 
+.aboutMeContent {
+    padding: 2rem;
+}
