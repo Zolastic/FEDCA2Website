@@ -62,6 +62,11 @@ body {
     color: #9E7D3A;
 }
 
+.exploreMeButton:hover {
+    color: #2B3B4F;
+    background-color: #9E7D3A;
+}
+
 .wrapper {
     height: 100vh;
     overflow-y: auto;
