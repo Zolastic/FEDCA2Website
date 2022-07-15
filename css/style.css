@@ -1,31 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'Poppins', sans-serif; */
     font-family: 'Montserrat', sans-serif;
-    background-image: url("../images/sunset_mountain_4.png");
 }
 
-
-
 ::selection {
-    color: orange;
-    background-color: white;
+    color: #B5A280;
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 
 
 
 /* navigation bar */
-header  .logo {
-    color: white;
+.logo {
+    color: #B5A280;
+    /* color: #A68444; */
     font-weight: 700;
     text-decoration: none;
     font-size: 2em;
     letter-spacing: 2px;
+}
+
+.logo:hover {
+    /* color: #F2C97C; */
+    color: #A68444;
 }
 
 .navigationLinks{
@@ -36,30 +38,72 @@ header  .logo {
 
 .navigationLinks:hover {
     background-color: white;
-    color: orange;
+    color: #A68444;
 }
 
-
+.careerOptionsDropdown:hover {
+    color: #A68444;
+}
 
 
 
 /* homepage */
 
 .introduction {
-    margin-top: 320px;
+    padding-top: 290px;
 }
 
-.moon {  
-    animation-name: floatingMoon;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    margin-left:30px;
-    margin-top: 5px;
+.introduction-text{
+    font-size: 3rem;
+    text-shadow: 0 0 5px black;
 }
 
-@keyframes floatingMoon {
-    from { transform: translate(0,  -120px); }
-    65%  { transform: translate(0, -90px); }
-    to   { transform: translate(0, -120px); }    
+.exploreMeButton {
+    color: #9E7D3A;
+}
+
+.exploreMeButton:hover {
+    color: #2B3B4F;
+    background-color: #9E7D3A;
+}
+
+.wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+.headerForHomepage {
+    position: relative;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+
+.background, .foreground {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.background {
+    transform: translateZ(-10px) scale(2);
+    right: 10px;
+}
+
+.foreground {
+    transform: translateZ(-5px) scale(1.5);
+    right: 6px;
+}
+
+.aboutMeHeading {
+    font-weight: 250;
+}
+
+.aboutMeContent {
+    padding: 2rem;
 }
