@@ -9,3 +9,8 @@ Made exploreMeButton have a hover effect
 
 15 July 2022
 added a bit of content to the about me
+
+
+
+
+*RMB TO DELETE concept(rmbToDelete).html*
