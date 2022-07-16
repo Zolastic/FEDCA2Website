@@ -105,12 +105,20 @@ body {
 }
 
 .aboutMeHeading {
-    font-weight: 250;
+    font-weight: 610;
+    color: #756446;
 }
 
-.aboutMeContent {
-    padding: 2rem;
+.AboutMeImg {
+    border-radius: 25px;
+    filter: drop-shadow(8px 8px 10px black);
+    width: 100%;
 }
+
+.myInterestsContent {
+    padding-top: 80px;
+}
+
 
 /* experience */
 .experienceHeaderText {
