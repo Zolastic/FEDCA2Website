@@ -11,7 +11,8 @@ Made exploreMeButton have a hover effect
 added a bit of content to the about me
 added experience.html
 
-
+18 July 2022
+Added content and footer to hompage-aboutMe
 
 
 CSS RUBRICS:
