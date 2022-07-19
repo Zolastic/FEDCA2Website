@@ -16,7 +16,7 @@ added experience.html
 
 CSS RUBRICS:
 add background image
-add border to element
+add border to element (done)
 apply a 2D or 3D transformation (done?)
 apply a css filer (done)
 text-shadow (done)

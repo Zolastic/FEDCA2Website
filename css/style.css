@@ -15,6 +15,14 @@ body {
 
 
 
+/* footer */
+footer {
+    background-color: #5E6A75;
+}
+
+
+
+
 /* headerBackground */
 .wrapper {
     height: 100vh;
@@ -113,11 +121,23 @@ body {
     border-radius: 25px;
     filter: drop-shadow(8px 8px 10px black);
     width: 100%;
+    padding: 14px;
 }
 
-.myInterestsContent {
-    padding-top: 80px;
+.sixteenPersonalities {
+    color: #3B398F;
 }
+
+.sixteenPersonalities:hover{
+    color: #41405C;
+}
+
+.borderForAboutMeContent {
+    border: 2px solid #756F52;
+    border-radius: 25px;
+}
+
+
 
 
 /* experience */
