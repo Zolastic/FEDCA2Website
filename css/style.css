@@ -178,7 +178,7 @@ footer {
     color: #ADA089;
 }
 
-.coursesOfferedBySOC {
+.coursesOfferedBySOCBorder {
     border: 2px dashed #ADA089;
 }
 
@@ -188,4 +188,8 @@ footer {
 
 .arrowDownForCoursesOfferedBySOC:hover {
     color: #CCDEE3;
+}
+
+.coursesOfferedCard {
+    width: 600px;
 }
