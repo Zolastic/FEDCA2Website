@@ -8,8 +8,8 @@ body {
 }
 
 ::selection {
-    color: #B5A280;
-    background-color: rgba(255, 255, 255, 0.25);
+    color: #FAF9F7;
+    background-color: #ADA089;
 }
 
 
@@ -17,9 +17,16 @@ body {
 
 /* footer */
 footer {
-    background-color: #5E6A75;
+    background-color: #CCDEE3;
 }
 
+.linksInFooter {
+    color: #ADA49A;
+}
+
+.linksInFooter:hover {
+    color: #FAF9F7;
+}
 
 
 
@@ -114,10 +121,10 @@ footer {
 
 .aboutMeHeading {
     font-weight: 610;
-    color: #756446;
+    color: #ADA089;
 }
 
-.AboutMeImg {
+.imagesNextToText {
     border-radius: 25px;
     filter: drop-shadow(8px 8px 10px black);
     width: 100%;
@@ -125,15 +132,15 @@ footer {
 }
 
 .sixteenPersonalities {
-    color: #3B398F;
+    color: #CCD2E3;
 }
 
 .sixteenPersonalities:hover{
-    color: #41405C;
+    color: #E4E3FD;
 }
 
 .borderForAboutMeContent {
-    border: 2px solid #756F52;
+    border: 2px solid #ADA089;
     border-radius: 25px;
 }
 
@@ -164,4 +171,21 @@ footer {
 
 .experienceHeaderText h6 a:hover {
     color: #A82F13;
+}
+
+.headingForTexts {
+    font-weight: 610;
+    color: #ADA089;
+}
+
+.coursesOfferedBySOC {
+    border: 2px dashed #ADA089;
+}
+
+.arrowDownForCoursesOfferedBySOC {
+    color: #212529;
+}
+
+.arrowDownForCoursesOfferedBySOC:hover {
+    color: #CCDEE3;
 }
