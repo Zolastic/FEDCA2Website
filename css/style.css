@@ -193,3 +193,88 @@ footer {
 .coursesOfferedCard {
     width: 600px;
 }
+
+
+
+
+/* coursesOffered */
+.careerOptionsHeaderText {
+    margin-top: 320px;
+}
+
+.careerOptionsHeaderText h1 {
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px black;
+    /* shadows added so that the texts are more visible and do not blend in with the background */
+    
+}
+
+.careerOptionsHeaderText h6 {
+    text-shadow: 0 0 10px black;
+}
+
+.careerOptionsHeaderText h6 a {
+    color:  white;
+}
+
+.careerOptionsHeaderText h6 a:hover {
+    color: #A15D0D;
+}
+
+.arrowDownForCareerOptions {
+    color: #212529;
+}
+
+.arrowDownForCareerOptions:hover {
+    color: #CCDEE3;
+}
+
+.careersIPursue {
+    margin-top: 250px;
+}
+
+.careersBorder {
+    border: 2px dashed #E4E3FD;
+}
+
+.careersCard {
+    width: 600px;
+}
+
+.careerImg {
+    width: 100%;
+}
+
+
+
+
+/* feedback */
+.feedbackHeader{
+    background-image: url("../images/feedback/silhouette_of_trees_on_an_afterglow.jpg");
+    height: 800px;
+}
+
+.feedbackHeaderText {
+    margin-top: 320px;
+}
+
+.feedbackHeaderText h1 {
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px black;
+    /* shadows added so that the texts are more visible and do not blend in with the background */
+    
+}
+
+.feedbackHeaderText h6 {
+    text-shadow: 0 0 10px black;
+}
+
+.feedbackHeaderText h6 a {
+    color:  white;
+}
+
+.feedbackHeaderText h6 a:hover {
+    color: #556E49;
+}

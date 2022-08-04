@@ -11,3 +11,10 @@ DAAA
 DISM
 DIT
 (all from same place. Look at CA1 for referenece)
+
+moon_shining_in_cloudy_sky: https://www.pexels.com/photo/waxing-moon-shining-in-cloudy-sky-6468238/
+software_developer: https://www.pexels.com/photo/person-encoding-in-laptop-574071/
+web_developer: https://www.pexels.com/photo/black-background-with-text-overlay-screengrab-270404/
+mobile_applications: https://www.pexels.com/photo/close-up-photo-of-smartphone-3571094/
+
+silhouette_of_trees_on_an_afterglow: https://www.pexels.com/photo/silhouette-of-trees-on-an-afterglow-1921336/
