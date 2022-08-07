@@ -65,12 +65,12 @@ slider.oninput = function() {
 feedbackTextArea.addEventListener('input', function (event) {
   const target = event.target;  // target is a read-only property of the Event interface. It references to the object onto which the vent was dispatched
   const currentLength = target.value.length;
-  textAreaCharCounter.innerHTML = `${currentLength} / ${200}`;
+  textAreaCharCounter.innerHTML = `${currentLength} / 200`;
 
   if (currentLength <= 200) {
     feedbackTextAreaError.textContent = '';
     feedbackTextAreaError.className = '';
-    feedbackTextAreaError.setAttribute('isvalid', 'true');
+    feedbackTextArea.setCustomValidity('');
   } else {
     showErrorFeedbackTextArea();
     
@@ -110,7 +110,7 @@ function showErrorEmail() {
 }
 
 function showErrorFeedbackTextArea() {
-  feedbackTextAreaError.setAttribute('isvalid', 'false');
+  feedbackTextArea.setCustomValidity('Feedback cannot be more than 200 characters!');
   feedbackTextAreaError.textContent = 'Feedback cannot be more than 200 characters!';
   feedbackTextAreaError.className = 'error active';
 }
