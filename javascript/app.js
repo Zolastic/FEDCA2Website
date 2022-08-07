@@ -1,6 +1,5 @@
-// There are many ways to pick a DOM node; here we get the form itself and the email
-// input box, as well as the span element into which we will place the error message.
-const form = document.getElementsByTagName('form')[0];
+
+const form = document.getElementsByTagName('form')[0];      // declaration of variables
 const letters = /^[A-Za-z]+$/;
 
 const nameOfPerson = document.getElementById('nameOfPerson');
@@ -31,14 +30,11 @@ nameOfPerson.addEventListener('input', function (event) {
 
 
 email.addEventListener('input', function (event) {        // 'input' is the event
-  // Each time the user types something, we check if the
-  // form fields are valid.
-
+  // Each time the user types something, check if the form fields are valid.
   if (email.validity.valid) {
-    // In case there is an error message visible, if the field
-    // is valid, we remove the error message.
-    emailError.textContent = ''; // Reset the content of the message
-    emailError.className = ''; // Reset the visual state of the message
+    // In case there is an error message visible, if the field is valid, remove the error message.
+    emailError.textContent = ''; // Resets the content of the message
+    emailError.className = ''; // Resets the visual state of the message
   } else {
     // If there is still an error, show the correct error
     showErrorEmail();
@@ -46,18 +42,17 @@ email.addEventListener('input', function (event) {        // 'input' is the even
 });
 
 form.addEventListener('submit', function (event) {
-  // if the email field is valid, we let the form submit
+  // if the email field is valid, the form can be submitted
 
   if (!email.validity.valid) {
-    // If it isn't, we display an appropriate error message
+    //displays error message
     showErrorEmail();
-    // Then we prevent the form from being sent by canceling the event
+    //Prevents the form from being sent by canceling the event
     event.preventDefault();
   }
 });
 
-
-slider.oninput = function() {
+slider.oninput = function () {        // to get and display the value of the slider
   sliderValue.innerHTML = this.value;
 }
 
@@ -73,13 +68,11 @@ feedbackTextArea.addEventListener('input', function (event) {
     feedbackTextArea.setCustomValidity('');
   } else {
     showErrorFeedbackTextArea();
-    
-
   }
 });
 
 
-function showErrorName() {
+function showErrorName() {  // error message for user's name
   if (nameOfPerson.validity.valueMissing) {
     nameOfPersonError.textContent = 'Please enter a name.'
   } else if (!nameOfPerson.value.match(letters)) {
@@ -90,18 +83,12 @@ function showErrorName() {
 }
 
 
-function showErrorEmail() {
+function showErrorEmail() {   //error message for user's email
   if (email.validity.valueMissing) {
-    // If the field is empty,
-    // display the following error message.
     emailError.textContent = 'You need to enter an e-mail address.';
   } else if (email.validity.typeMismatch) {
-    // If the field doesn't contain an email address,
-    // display the following error message.
     emailError.textContent = 'Entered value needs to be an e-mail address.';
   } else if (email.validity.tooShort) {
-    // If the data is too short,
-    // display the following error message.
     emailError.textContent = `Email should be at least ${email.minLength} characters! You entered ${email.value.length}.`;
   }
 
@@ -109,7 +96,7 @@ function showErrorEmail() {
   emailError.className = 'error active';
 }
 
-function showErrorFeedbackTextArea() {
+function showErrorFeedbackTextArea() {    // error message for user's feedback
   feedbackTextArea.setCustomValidity('Feedback cannot be more than 200 characters!');
   feedbackTextAreaError.textContent = 'Feedback cannot be more than 200 characters!';
   feedbackTextAreaError.className = 'error active';

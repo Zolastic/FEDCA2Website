@@ -48,20 +48,23 @@
                         <li class="nav-item">
                             <a class="nav-link navigationLinks" href="index.html#aboutMeContent">About Me</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link navigationLinks" href="experience.html">Experience</a>
-                        </li>
                         <li class="nav-item dropdown">
                             <a href="#" type="button" class="btn dropdown-toggle nav-link navigationLinks"
-                                data-bs-toggle="dropdown">Career Options</a>
+                                data-bs-toggle="dropdown">Experience</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item careerOptionsDropdown" href="#">Option #1</a></li>
-                                <li><a class="dropdown-item careerOptionsDropdown" href="#">Option #2</a></li>
-                                <li><a class="dropdown-item careerOptionsDropdown" href="#">Option #3</a></li>
+                                <li><a class="dropdown-item careerOptionsDropdown" href="experience.html">Overall</a>
+                                </li>
+                                <li><a class="dropdown-item careerOptionsDropdown"
+                                        href="experience.html#experienceInSp">Experience In SP</a></li>
+                                <li><a class="dropdown-item careerOptionsDropdown"
+                                        href="experience.html#coursesOffered">Courses Offered</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link navigationLinks" href="#">Feedback</a>
+                            <a class="nav-link navigationLinks" href="careerOptions.html">Career Options</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navigationLinks" href="feedback.html">Feedback</a>
                         </li>
                     </ul>
                 </div>
@@ -84,7 +87,8 @@
                 <section class="row">
                     <div class="form-group">
                         <label for="nameOfPerson" class="form-label"><i class="bi bi-person-fill"></i> Name*:</label>
-                        <input type="text" class="form-control" id="nameOfPerson" placeholder="John Doe" name="nameOfPerson" pattern="[A-Za-z]+" required>
+                        <input type="text" class="form-control" id="nameOfPerson" placeholder="John Doe"
+                            name="nameOfPerson" pattern="[A-Za-z]+" required>
                         <span class="error" aria-live="polite"></span>
                         <div class="valid-feedback"></div>
                         <div class="invalid-feedback"></div>
@@ -93,7 +97,8 @@
                 <section class="row mt-3">
                     <div class="form-group">
                         <label for="email" class="form-label"><i class="bi bi-envelope-fill"></i> Email*:</label>
-                        <input type="email" class="form-control" id="mail" placeholder="name@example.com" name="mail" minlength="8" required>
+                        <input type="email" class="form-control" id="mail" placeholder="name@example.com" name="mail"
+                            minlength="8" required>
                         <span class="error" aria-live="polite"></span>
                         <div class="valid-feedback"></div>
                         <div class="invalid-feedback"></div>
@@ -101,15 +106,18 @@
                 </section>
                 <section class="row mt-3">
                     <div class="">
-                        <label for="websiteRating" class="form-label"><i class="bi bi-star-fill"></i> How would you rate our website?: </label>
+                        <label for="websiteRating" class="form-label"><i class="bi bi-star-fill"></i> How would you rate
+                            our website?: </label>
                         <input type="range" class="form-range" id="websiteRatingSlider" min="1" max="10" value="5">
                         <p class="fs-5">Value: <span id="ratingValue"></span></p>
                     </div>
                 </section>
                 <section class="row mt-3">
-                    <label for="feedbackTextArea" class="form-label">Any feedback? (Optional): </label><p class="fs-5">
-                    <textarea class="form-control" id="feedbackTextArea" rows="3" placeholder="Best Website Ever...!"></textarea>
-                    <span class="error" aria-live="polite"></span>
+                    <label for="feedbackTextArea" class="form-label">Any feedback? (Optional): </label>
+                    <p class="fs-5">
+                        <textarea class="form-control" id="feedbackTextArea" rows="3"
+                            placeholder="Best Website Ever...!"></textarea>
+                        <span class="error" aria-live="polite"></span>
                     <p class="fs-5">Char: <span id="textAreaCharCounter">0/200</span></p>
                     <div class="valid-feedback"></div>
                     <div class="invalid-feedback"></div>
@@ -118,6 +126,41 @@
             </form>
         </section>
     </main>
+
+    <!-- footer -->
+    <footer class="container-fluid text-dark">
+        <div class="row align-items-center">
+            <div class="col-sm-8">
+                &copy; 2022. All Rights Reserved. Ho Nhat Tien.
+                <a href="#" class="linksInFooter">Terms of Use</a>
+                <a href="#" class="linksInFooter">Privacy Policy</a>
+            </div>
+            <div class="col-sm-4 align-items-center">
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com/nhxt_tixnn/">
+                            <i class="bi bi-instagram text-dark fs-2"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="mailto: honhattienlul@gmail.com">
+                            <i class="bi bi-envelope-fill text-dark fs-2"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/profile.php?id=100084316411434">
+                            <i class="bi bi-facebook text-dark fs-2"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://github.com/Zolastic">
+                            <i class="bi bi-github text-dark fs-2"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

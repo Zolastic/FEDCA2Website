@@ -12,6 +12,9 @@ body {
     background-color: #ADA089;
 }
 
+p {
+    word-spacing: 2px;
+}
 
 
 
@@ -144,6 +147,10 @@ footer {
     border-radius: 25px;
 }
 
+.whatOtherSayCardImg {
+    width: 69%;
+}
+
 
 
 
@@ -209,9 +216,7 @@ footer {
 .careerOptionsHeaderText h1 {
     font-weight: 500;
     letter-spacing: 1px;
-    text-shadow: 0 0 10px black;
-    /* shadows added so that the texts are more visible and do not blend in with the background */
-    
+    text-shadow: 0 0 10px black;    
 }
 
 .careerOptionsHeaderText h6 {
@@ -267,9 +272,7 @@ footer {
 .feedbackHeaderText h1 {
     font-weight: 500;
     letter-spacing: 1px;
-    text-shadow: 0 0 10px black;
-    /* shadows added so that the texts are more visible and do not blend in with the background */
-    
+    text-shadow: 0 0 10px black;    
 }
 
 .feedbackHeaderText h6 {
@@ -284,7 +287,8 @@ footer {
     color: #556E49;
 }
 
-.error {
+/* making the error message more noticable */
+.error {          
     width  : 100%;
     padding: 0;
   
