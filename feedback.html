@@ -80,14 +80,41 @@
     </header>
     <main class="container-fluid">
         <section class="fs-4 text-dark bg-light p-5">
-            <form action="#" class="was-validated" novalidate>
-                <div class="form-group">
-                    <label for="email"><i class="bi bi-envelope-fill"></i> Email:</label>
-                    <input type="email" class="form-control" id="mail" placeholder="name@example.com" name="mail" required>
+            <form method="post" action="" class="was-validated" novalidate>
+                <section class="row">
+                    <div class="form-group">
+                        <label for="nameOfPerson" class="form-label"><i class="bi bi-person-fill"></i> Name*:</label>
+                        <input type="text" class="form-control" id="nameOfPerson" placeholder="John Doe" name="nameOfPerson" pattern="[A-Za-z]+" required>
+                        <span class="error" aria-live="polite"></span>
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback"></div>
+                    </div>
+                </section>
+                <section class="row mt-3">
+                    <div class="form-group">
+                        <label for="email" class="form-label"><i class="bi bi-envelope-fill"></i> Email*:</label>
+                        <input type="email" class="form-control" id="mail" placeholder="name@example.com" name="mail" minlength="8" required>
+                        <span class="error" aria-live="polite"></span>
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback"></div>
+                    </div>
+                </section>
+                <section class="row mt-3">
+                    <div class="">
+                        <label for="websiteRating" class="form-label"><i class="bi bi-star-fill"></i> How would you rate our website?: </label>
+                        <input type="range" class="form-range" id="websiteRatingSlider" min="1" max="10" value="5">
+                        <p class="fs-5">Value: <span id="ratingValue"></span></p>
+                    </div>
+                </section>
+                <section class="row mt-3">
+                    <label for="feedbackTextArea" class="form-label">Any feedback? (Optional): </label><p class="fs-5">
+                    <textarea class="form-control" id="feedbackTextArea" rows="3" placeholder="Best Website Ever...!"></textarea>
                     <span class="error" aria-live="polite"></span>
+                    <p class="fs-5">Char: <span id="textAreaCharCounter">0/200</span></p>
                     <div class="valid-feedback"></div>
                     <div class="invalid-feedback"></div>
-                </div>
+                </section>
+                <button type="submit" id="submit" class="btn btn-outline-info">Submit</button>
             </form>
         </section>
     </main>
