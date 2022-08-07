@@ -22,6 +22,9 @@
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- javascript-->
+    <script src="javascript/app.js" defer></script>
+
 
 </head>
 
@@ -75,30 +78,17 @@
         </section>
 
     </header>
-    <main>
+    <main class="container-fluid">
         <section class="fs-4 text-dark bg-light p-5">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quaerat sed, nihil dolor exercitationem fugiat
-            veritatis! Dolor blanditiis cupiditate ea commodi itaque, aliquid deserunt id provident, quia quibusdam
-            ducimus nesciunt et obcaecati quidem, aliquam eius consequatur praesentium optio doloremque est? Laborum
-            blanditiis placeat fugiat totam, alias debitis nihil ipsum eum ex rerum nobis quae, praesentium provident
-            incidunt, quia ipsa doloremque assumenda ullam quis quod consectetur ipsam. Voluptas vitae quia, accusamus
-            maxime error aliquid magnam natus architecto in sunt pariatur eos. Praesentium nihil est velit
-            reprehenderit. Deleniti amet voluptates iste, nulla dignissimos accusamus maxime incidunt ducimus, vitae
-            harum aspernatur fugiat excepturi? Fuga eos et suscipit officia, officiis molestias ipsam corrupti hic harum
-            perferendis veniam consequuntur corporis similique neque natus cum error unde doloremque totam culpa sint
-            illo. Harum aliquid delectus dignissimos tenetur fuga, exercitationem non sit ex temporibus aperiam officiis
-            id architecto minima quaerat cupiditate nemo itaque debitis voluptate corporis dicta. Doloribus corrupti
-            quam cupiditate, dolore dolor error recusandae dolores voluptatum id autem, tenetur a in? Provident
-            repellendus id architecto soluta rerum dignissimos ratione tempora, eos praesentium quod dolorum corporis
-            sint recusandae nesciunt suscipit non a hic officia voluptatem aperiam iusto? Natus deserunt harum placeat
-            culpa hic fuga quaerat quisquam vitae dolor fugiat minima, aut, veniam labore ipsum suscipit praesentium
-            iste blanditiis. Laborum, nobis esse iure fugiat officia placeat excepturi voluptatibus voluptas commodi.
-            Ipsam quae dicta esse sapiente quaerat laudantium eligendi illum recusandae. Aut nulla ipsam vitae vel
-            maxime at harum velit in sit cum officia perspiciatis deserunt consectetur, voluptatem possimus quas eaque
-            repellat. Quisquam ratione eum placeat assumenda earum debitis libero natus sunt molestias dignissimos,
-            maiores sapiente voluptatem corporis minus facere beatae, provident quis quae! Quia ex architecto culpa
-            eaque! Eaque aspernatur deleniti rerum voluptatibus doloremque, adipisci provident quibusdam quidem nostrum
-            neque aliquam, error ab nesciunt cum voluptatem modi a?
+            <form action="#" class="was-validated" novalidate>
+                <div class="form-group">
+                    <label for="email"><i class="bi bi-envelope-fill"></i> Email:</label>
+                    <input type="email" class="form-control" id="mail" placeholder="name@example.com" name="mail" required>
+                    <span class="error" aria-live="polite"></span>
+                    <div class="valid-feedback"></div>
+                    <div class="invalid-feedback"></div>
+                </div>
+            </form>
         </section>
     </main>
 </body>

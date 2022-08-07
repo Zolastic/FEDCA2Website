@@ -202,6 +202,10 @@ footer {
     margin-top: 320px;
 }
 
+.careerOptionsHeaderText {
+    flex-direction: column;
+}
+
 .careerOptionsHeaderText h1 {
     font-weight: 500;
     letter-spacing: 1px;
@@ -253,10 +257,11 @@ footer {
 .feedbackHeader{
     background-image: url("../images/feedback/silhouette_of_trees_on_an_afterglow.jpg");
     height: 800px;
+    overflow-x: hidden;
 }
 
 .feedbackHeaderText {
-    margin-top: 320px;
+    margin-top: 300px;
 }
 
 .feedbackHeaderText h1 {
@@ -278,3 +283,4 @@ footer {
 .feedbackHeaderText h6 a:hover {
     color: #556E49;
 }
+  
