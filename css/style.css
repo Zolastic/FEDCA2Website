@@ -42,14 +42,15 @@ footer {
 }
 
 
-.headerForBackground{
+.headerForBackground {
     position: relative;
     height: 100%;
     transform-style: preserve-3d;
     z-index: -1;
 }
 
-.background, .foreground {
+.background,
+.foreground {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -85,7 +86,7 @@ footer {
     color: #A68444;
 }
 
-.navigationLinks{
+.navigationLinks {
     border-radius: 20px;
     color: white;
     font-weight: 300;
@@ -108,7 +109,7 @@ footer {
     padding-top: 290px;
 }
 
-.introduction-text{
+.introduction-text {
     font-size: 3rem;
     text-shadow: 0 0 5px black;
 }
@@ -138,7 +139,7 @@ footer {
     color: #CCD2E3;
 }
 
-.sixteenPersonalities:hover{
+.sixteenPersonalities:hover {
     color: #E4E3FD;
 }
 
@@ -165,7 +166,7 @@ footer {
     letter-spacing: 1px;
     text-shadow: 0 0 10px black;
     /* shadows added so that the texts are more visible and do not blend in with the background */
-    
+
 }
 
 .experienceHeaderText h6 {
@@ -173,7 +174,7 @@ footer {
 }
 
 .experienceHeaderText h6 a {
-    color:  white;
+    color: white;
 }
 
 .experienceHeaderText h6 a:hover {
@@ -216,7 +217,7 @@ footer {
 .careerOptionsHeaderText h1 {
     font-weight: 500;
     letter-spacing: 1px;
-    text-shadow: 0 0 10px black;    
+    text-shadow: 0 0 10px black;
 }
 
 .careerOptionsHeaderText h6 {
@@ -224,7 +225,7 @@ footer {
 }
 
 .careerOptionsHeaderText h6 a {
-    color:  white;
+    color: white;
 }
 
 .careerOptionsHeaderText h6 a:hover {
@@ -259,7 +260,7 @@ footer {
 
 
 /* feedback */
-.feedbackHeader{
+.feedbackHeader {
     background-image: url("../images/feedback/silhouette_of_trees_on_an_afterglow.jpg");
     height: 800px;
     overflow-x: hidden;
@@ -272,7 +273,7 @@ footer {
 .feedbackHeaderText h1 {
     font-weight: 500;
     letter-spacing: 1px;
-    text-shadow: 0 0 10px black;    
+    text-shadow: 0 0 10px black;
 }
 
 .feedbackHeaderText h6 {
@@ -280,7 +281,7 @@ footer {
 }
 
 .feedbackHeaderText h6 a {
-    color:  white;
+    color: white;
 }
 
 .feedbackHeaderText h6 a:hover {
@@ -288,20 +289,18 @@ footer {
 }
 
 /* making the error message more noticable */
-.error {          
-    width  : 100%;
+.error {
+    width: 100%;
     padding: 0;
-  
+
     font-size: 80%;
     color: white;
     background-color: #900;
     border-radius: 0 0 5px 5px;
-  
+
     box-sizing: border-box;
-  }
-  
-  .error.active {
+}
+
+.error.active {
     padding: 0.3em;
-  }
-  
-  
+}
