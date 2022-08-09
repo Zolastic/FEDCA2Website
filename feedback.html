@@ -50,7 +50,7 @@
                             <a class="nav-link navigationLinks" href="index.html#aboutMeContent">About Me</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a href="#" type="button" class="btn dropdown-toggle nav-link navigationLinks"
+                            <a href="#" class="btn dropdown-toggle nav-link navigationLinks"
                                 data-bs-toggle="dropdown">Experience</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item careerOptionsDropdown" href="experience.html">Overall</a>
@@ -83,37 +83,37 @@
 
     </header>
     <main class="container-fluid">
-        <section class="fs-4 text-dark bg-light p-3 p-sm-5">
-            <form method="post" action="" class="was-validated" novalidate>
-                <section class="row">
+        <div class="fs-4 text-dark bg-light p-3 p-sm-5">
+            <form method="post" class="was-validated" novalidate>
+                <div class="row">
                     <div class="form-group">
                         <label for="nameOfPerson" class="form-label"><i class="bi bi-person-fill"></i> Name*:</label>
                         <input type="text" class="form-control" id="nameOfPerson" placeholder="John Doe"
-                            name="nameOfPerson" pattern="[A-Za-z]+" required>
+                            name="nameOfPerson" pattern="[A-Za-z\s]+" required>
                         <span class="error" aria-live="polite"></span>
                         <div class="valid-feedback"></div>
                         <div class="invalid-feedback"></div>
                     </div>
-                </section>
-                <section class="row mt-3">
+                </div>
+                <div class="row mt-3">
                     <div class="form-group">
                         <label for="email" class="form-label"><i class="bi bi-envelope-fill"></i> Email*:</label>
-                        <input type="email" class="form-control" id="mail" placeholder="name@example.com" name="mail"
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email"
                             minlength="8" required>
                         <span class="error" aria-live="polite"></span>
                         <div class="valid-feedback"></div>
                         <div class="invalid-feedback"></div>
                     </div>
-                </section>
-                <section class="row mt-3">
+                </div>
+                <div class="row mt-3">
                     <div class="">
-                        <label for="websiteRating" class="form-label"><i class="bi bi-star-fill"></i> How would you rate
+                        <label for="websiteRatingSlider" class="form-label"><i class="bi bi-star-fill"></i> How would you rate
                             our website?: </label>
                         <input type="range" class="form-range" id="websiteRatingSlider" min="1" max="10" value="5">
                         <p class="fs-5">Value: <span id="ratingValue"></span></p>
                     </div>
-                </section>
-                <section class="row mt-3">
+                </div>
+                <div class="row mt-3">
                     <label for="feedbackTextArea" class="form-label">Any feedback? (Optional): </label>
                     <p class="fs-5">
                         <textarea class="form-control" id="feedbackTextArea" rows="3"
@@ -122,10 +122,10 @@
                     <p class="fs-5">Char: <span id="textAreaCharCounter">0/200</span></p>
                     <div class="valid-feedback"></div>
                     <div class="invalid-feedback"></div>
-                </section>
+                </div>
                 <button type="submit" id="submit" class="btn btn-outline-info">Submit</button>
             </form>
-        </section>
+        </div>
     </main>
 
     <!-- footer -->
@@ -144,7 +144,7 @@
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="mailto: honhattienlul@gmail.com">
+                        <a href="mailto:honhattienlul@gmail.com">
                             <i class="bi bi-envelope-fill text-dark fs-2"></i>
                         </a>
                     </li>
